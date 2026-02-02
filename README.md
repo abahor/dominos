@@ -23,10 +23,10 @@ The engine evaluates the "Best Move" by calculating a score for every legal tile
 Input your 7 starting tiles when prompted. The engine will remove these from the left (boneyard) set.
 2. The Game Loop
 The engine operates on three main event types:
-* Turn 0 (Your Move): Input the current board ends. The AI will output the Best Domino to play.
-* Turn 1 (Record Play): Input tiles played by others to keep the tracker accurate.
-* Turn 2 (Record Pass): If a player passes, input the current ends. The AI now knows that player has *0* of those numbers.
-* Turn 3 (Exit the game): If you want to exit the game loop and end the game.
+* **Turn 0 (Your Move):** Input the current board ends. The AI will output the Best Domino to play.
+* **Turn 1 (Record Play):** Input tiles played by others to keep the tracker accurate.
+* **Turn 2 (Record Pass):** If a player passes, input the current ends. The AI now knows that player has *0* of those numbers.
+* **Turn 3 (Exit the game):** If you want to exit the game loop and end the game.
 
 ## 💻 Code Structure
 | component | Responsibility |
