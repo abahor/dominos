@@ -5,7 +5,7 @@ Unlike basic domino simulators, this engine implements probabilistic tracking. I
 
 ## 🧠 Strategic Heuristics
 The engine evaluates the "Best Move" by calculating a score for every legal tile in your hand using the following formula:\
-<p align="center"><i>Score</i> = *S<sub>partner</sub>* + *B<sub>opponent</sub>* + *C<sub>control</sub>*</p>
+<p align="center"><i bold>Score</i> = *S<sub>partner</sub>* + *B<sub>opponent</sub>* + *C<sub>control</sub>*</p>
 **Partner Support (_S_):** Analyzes the teammate's history. If a move creates an end that the partner is known to be missing, the score is penalized.\
 **Opponent Blocking (_B_):** Boosts the score if the resulting board end matches a number an opponent has previously passed on.\
 **Maintaining Control (_C_):** Uses frequency counting to ensure you retain tiles that allow you to dictate the flow of the game.
