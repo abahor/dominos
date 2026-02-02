@@ -43,4 +43,3 @@ The engine operates on three main event types:
 
 ## 🤝 Contributing
 Contributions are welcome! If you have a heuristic that improves the win rate, feel free to fork and submit a PR.
-create_domino_set(): 
