@@ -5,13 +5,15 @@ Unlike basic domino simulators, this engine implements probabilistic tracking. I
 
 ## 🧠 Strategic Heuristics
 The engine evaluates the "Best Move" by calculating a score for every legal tile in your hand using the following formula:
+
 <p align="center"><i>Score</i> = <i>S<sub>partner</sub></i> + <i>B<sub>opponent</sub></i> + <i>C<sub>control</sub></i></p>
+
 + **Partner Support (_S_):** Analyzes the teammate's history. If a move creates an end that the partner is known to be missing, the score is penalized.
 + **Opponent Blocking (_B_):** Boosts the score if the resulting board end matches a number an opponent has previously passed on.
 + **Maintaining Control (_C_):** Uses frequency counting to ensure you retain tiles that allow you to dictate the flow of the game.
 
 ## 🛠 Features
-* Dynamic Hand Tracking: Monitors the remaining 28 tiles in the deck (the "boneyard").
+* **Dynamic Hand Tracking:** Monitors the remaining 28 tiles in the deck (the "boneyard").
 * **Player Profiling:** Automatically updates a cannot_have database for all 4 players based on game events.
 * **Double-Six Compatibility:** Designed for the standard 28-tile set.
 * **Weighted Decision Matrix:** Scores tiles based on multiple defensive and offensive factors.
